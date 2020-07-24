@@ -5,7 +5,7 @@ class number{
 	int a,b;
 	
 	public:
-	number(void);
+	number(void);   // constructor declaration
 		
 		
 	void printnumber(){

@@ -1,0 +1,16 @@
+  
+#include<iostream>
+using namespace std;
+
+int add(int a , int b){
+return a+b;
+}
+
+int main(){
+int num1;
+int num2;
+
+cout<<"the sum is "<<add(int num1, int num2);
+
+return 0;
+}

@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class number{
+	int a,b;
+	
+	public:
+	number(void);
+		
+		
+	void printnumber(){
+	cout<<"the values are now "<<a<<" +  "<<b<<"i"<<endl;
+  }
+	
+};
+
+
+      number ::number(void){
+       a=90;
+       b=10;
+	
+}
+
+int main(){
+	
+	number n1,n2,n3;
+//	int a;
+//	a=4;
+	n1.printnumber();
+	n2.printnumber();
+	n3.printnumber();
+	return 0;
+	
+    }

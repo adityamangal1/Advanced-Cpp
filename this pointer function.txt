@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+class mangal{
+	
+	public:
+	int a;
+	
+	
+	void Data(int a){
+		
+         
+	this->a = a;   //this point declaration	
+		
+	}
+	void getData(){
+			
+	cout<<a;
+        }
+};
+
+
+    int main(){
+     mangal ji;
+     ji.Data(50);
+     ji.getData();
+
+      return 0;
+}

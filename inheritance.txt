@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+
+class number{
+	protected:
+	int n1;
+	
+	public:
+         void func(int n2){
+             n1=n2;
+		
+			
+	}
+		
+
+};
+
+
+class number2{
+	        protected:
+		int n3;
+		
+		public:
+			
+	         void hello(int n4){
+		n3=n4;
+             }	
+
+};
+
+class number3{
+	protected:
+		
+		int n5;
+		
+		public:
+			
+	     void hello1(int n6){
+               n5=n6;
+	 }
+		   	
+};
+
+class derived : public number , public number2 , public number3{
+
+	   public:
+	   	
+	   void show(){
+	   		
+	   		
+	   cout<<"the value of number  is " <<n1<<endl;
+	   cout<<"the value of number2 is "<<n3<<endl;
+	   cout<<"the value of number3 is "<<n5<<endl;
+	   		
+           }
+	
+};
+int main(){
+
+
+number x;
+
+x.func(3);
+
+number2 y;
+y.hello(40);
+number3 z;
+z.hello1(94);
+
+derived mangal;
+mangal.show();
+
+return 0;
+	
+}

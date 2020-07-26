@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+class mangal{
+	public:
+	int var;
+	
+	void display(){
+		
+		cout<<"the base class value is "<<var<<endl;
+	}
+	
+};
+
+class mangal2 : public mangal{
+	public:
+	int var2;
+	
+	void display2(){
+		
+		cout<<"the derived class value is "<<var2;
+	}
+};
+
+
+        int main(){
+	mangal * hello;   // base class pointer declaration
+	mangal base;
+	mangal2 der;
+	
+	hello = &base;
+	
+	hello->var = 20;
+	hello->display();
+	
+	
+
+       mangal2 * hello2;
+       // hello2->var=100;
+       hello2 = &der;
+       hello2->var2=60;
+       hello2->display2(); 
+
+	 return 0;
+}

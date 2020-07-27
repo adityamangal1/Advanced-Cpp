@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+
+class red;
+
+class hello{
+	
+	int val1;
+	friend void exchange(hello &a1, red &a2);
+	
+	public:
+		void setdata(int a){
+			
+			val1=a;
+		
+			
+		}
+		void display()
+	{
+		
+		cout<<val1;
+	}
+
+	
+	
+};
+
+class red{
+	int val2;
+	friend void exchange(hello &a1, red &a2);
+	
+	public:
+	   void getdata(int b){
+	   	
+	   	val2=b;
+	   }
+	
+	void display()
+	{
+		
+		cout<<val2;
+	}
+};
+
+
+
+  void exchange(hello &a1, red &a2){
+  	
+  	    int temp;
+  	    temp=a1.val1;
+  	    a1.val1=a2.val2;
+  	    a2.val2=temp; 	
+  }
+  
+  
+  
+  
+  int main(){
+  	
+  	hello c1;
+  	c1.setdata(2);
+  	
+  	red c2;
+  	c2.getdata(1);
+  	//int sum;
+  	
+  	exchange(c1,c2);
+  	c2.display();
+  	//cout<<endl;
+  	//c2.display();  	
+  	
+  	
+  	
+  	
+  }

@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	
+	int a;
+	int* b;    //pointer declaration
+	
+	a=4;
+	b=&a;
+	
+	cout<<"the values is "<<*b<<endl;
+
+
+
+return 0;
+}
